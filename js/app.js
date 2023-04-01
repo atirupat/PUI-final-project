@@ -16,7 +16,7 @@ app.renderer.view.style.position = 'absolute';
 document.body.appendChild(app.view);
 
 // Assets to be loaded
-PIXI.Assets.add('sky-background', './assets/sky background.png');
+PIXI.Assets.add('sky-background', './assets/background-2-02.png');
 PIXI.Assets.load('sky-background').then(setup);
 
 // Referencing Example Code from: https://pixijs.io/examples/#/demos-advanced/scratchcard.js
