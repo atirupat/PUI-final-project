@@ -17,10 +17,15 @@ document.body.appendChild(app.view);
 
 // Assets to be loaded
 PIXI.Assets.add('sky-background', './assets/background-2-02.png');
-PIXI.Assets.load('sky-background').then(setup);
+PIXI.Assets.load('sky-background').then(bkgSetup);
+
+//Create Buggy Sprite
+const buggyTexture = PIXI.Texture.from('./assets/Stickers_BlackBuggy.png');
+const buggy = new PIXI.Sprite(buggyTexture);
+app.stage.addChild(buggy);
 
 // Referencing Example Code from: https://pixijs.io/examples/#/demos-advanced/scratchcard.js
-function setup() {
+function bkgSetup() {
   const { width, height } = app.screen;
   const stageSize = { width, height };
 
@@ -28,4 +33,8 @@ function setup() {
 
   app.stage.addChild(courseBackground);
 }
+
+
+
+
 
