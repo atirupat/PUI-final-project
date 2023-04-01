@@ -16,6 +16,16 @@ app.renderer.view.style.position = 'absolute';
 document.body.appendChild(app.view);
 
 // Assets to be loaded
-PIXI.Assets.add('sky-background', './assets/sky background.svg');
+PIXI.Assets.add('sky-background', './assets/sky background.png');
 PIXI.Assets.load('sky-background').then(setup);
+
+// Referencing Example Code from: https://pixijs.io/examples/#/demos-advanced/scratchcard.js
+function setup() {
+  const { width, height } = app.screen;
+  const stageSize = { width, height };
+
+  const courseBackground = Object.assign(PIXI.Sprite.from('sky-background'), stageSize);
+
+  app.stage.addChild(courseBackground);
+}
 
