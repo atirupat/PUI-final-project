@@ -20,7 +20,7 @@ PIXI.Assets.add('sky-background', './assets/background-2-02.png');
 PIXI.Assets.load('sky-background').then(bkgSetup);
 
 //Create Buggy Sprite
-const buggyTexture = PIXI.Texture.from('./assets/Stickers_BlackBuggy.png');
+const buggyTexture = PIXI.Texture.from('./assets/black-buggy.png');
 const buggy = new PIXI.Sprite(buggyTexture);
 app.stage.addChild(buggy);
 
