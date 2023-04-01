@@ -1,0 +1,25 @@
+{
+  "name": "PUI-final-project",
+  "version": "1.0.0",
+  "description": "Programming Useable Interfaces Final Project",
+  "main": "index.js",
+  "dependencies": {
+    "pixi.js": "^7.2.3",
+    "svg.js": "^2.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/atirupat/PUI-final-project.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/atirupat/PUI-final-project/issues"
+  },
+  "homepage": "https://github.com/atirupat/PUI-final-project#readme"
+}
