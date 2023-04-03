@@ -3,10 +3,89 @@
   margin: 0%;
 }
 
-#navigation-page {
-  background-image: url('pui buggy course.svg');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-position: center;
-  /* background-color: #ce5753; */
+/* -------------------------------------------------------------------------------------------------------------- */
+/* Generic Text Styling */
+p, span {
+  font-family: 'Roboto', sans-serif;
 }
+
+.bold-txt {
+  font-weight: bold;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+/* Course Navigation Page */
+#navigation-page {
+  display: flex;
+  flex-direction: row;
+
+  width: 100vw;
+  height: 100vh;
+
+  background-color: blue;
+}
+
+/* -------------------------------------------------------------------------------------------------------------- */
+/* Nav Bar */
+.vertical-navigation-bar {
+  /* background-color: black; */
+  background-color: white;
+
+  display: flex;
+  flex-direction: column;
+  flex-grow: 0;
+  align-items: center;
+
+  width: auto;
+  max-width: 20%;
+  height: 100vh;
+}
+
+#sweepstakes-logo {
+  width: auto;
+  height: 33.3vh;
+
+  /* padding: 0px, 3%, 3%, 10px;
+  border-bottom: 3px solid black; */
+}
+
+#navigation-info {
+  box-sizing: border-box;
+  font-weight: 400;
+  font-size: 24px;
+  padding: 5% 12% 12% 20%;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-around;
+}
+
+#info-icon {
+  width: auto;
+  min-height: 20px;
+  max-height: 7%;
+}
+
+.info-txt {
+  padding-bottom: 3%;
+}
+/* -------------------------------------------------------------------------------------------------------------- */
+/* Interactive Course Map Display */
+#map-view {
+  box-sizing: border-box;
+  flex-grow: 1;
+
+  height: auto;
+  width: auto;
+
+  display: flex;
+  justify-content: center;
+  background-color: #779444;
+}
+
+#course-img {
+  height: auto;
+  width: 100%;
+}
+
