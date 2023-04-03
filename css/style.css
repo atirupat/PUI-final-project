@@ -2,3 +2,11 @@
   padding: 0%;
   margin: 0%;
 }
+
+#navigation-page {
+  background-image: url('pui buggy course.svg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  /* background-color: #ce5753; */
+}
