@@ -73,6 +73,7 @@ p, span, h1 {
 }
 
 .start-course {
+  box-sizing: border-box;
   background-color: #565656;
   width: 100%;
 
@@ -82,6 +83,9 @@ p, span, h1 {
 
   padding-left: 20%;
   padding-right: 20%;
+  padding-bottom: 5%;
+
+  justify-content: space-around;
 }
 
 .ready-set-go {
@@ -90,10 +94,18 @@ p, span, h1 {
 
   text-align: center;
   color: white;
-
-  padding: 5% 10%;
 }
 
+#go-button {
+  background-color: #466db4;
+  margin-left: 2%;
+  margin-right: 2%;
+
+  height: fit-content;
+
+  filter: drop-shadow(4px -6px 2px #454545);
+
+}
 /* -------------------------------------------------------------------------------------------------------------- */
 /* Interactive Course Map Display */
 #map-view {
