@@ -5,7 +5,7 @@
 
 /* -------------------------------------------------------------------------------------------------------------- */
 /* Generic Text Styling */
-p, span {
+p, span, h1 {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -29,6 +29,7 @@ p, span {
 /* Nav Bar */
 .vertical-navigation-bar {
   /* background-color: black; */
+  box-sizing: border-box;
   background-color: white;
 
   display: flex;
@@ -70,6 +71,29 @@ p, span {
 .info-txt {
   padding-bottom: 3%;
 }
+
+.start-course {
+  background-color: #565656;
+  width: 100%;
+
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+
+  padding-left: 20%;
+  padding-right: 20%;
+}
+
+.ready-set-go {
+  font-weight: 600;
+  font-size: 50px;
+
+  text-align: center;
+  color: white;
+
+  padding: 5% 10%;
+}
+
 /* -------------------------------------------------------------------------------------------------------------- */
 /* Interactive Course Map Display */
 #map-view {
