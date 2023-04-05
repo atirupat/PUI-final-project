@@ -110,18 +110,18 @@ p, span, h1 {
 /* Interactive Course Map Display */
 #map-view {
   box-sizing: border-box;
-  flex-grow: 1;
+  flex-grow: 0;
 
   height: auto;
   width: auto;
 
   display: flex;
   justify-content: center;
-  background-color: #779444;
+  background-color: #cad9a9;
 }
 
 #course-img {
   height: auto;
-  width: 100%;
+  width: 800px;
 }
 

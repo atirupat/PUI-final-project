@@ -1,19 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css"/>
+    <script src="./js/navigation.js"></script>
+    <title>Buggy Information Website</title>
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="./css/style.css"/>
-  <!-- <script src="./js/svg.js"></script> -->
-  <title>Document</title>
-</head>
+  <body>
+    <div id="navigation-page">
+      <nav class="vertical-navigation-bar">
+        <img src="./assets/sweepstakes_logo_notext.svg"
+          alt="Buggy Sweepstakes Logo: a top-view of a buggy with elements of Carnegie Mellon's Thistle logo incorporated"
+          id="sweepstakes-logo">
+        
+        <!-- Info Icon Source: https://commons.wikimedia.org/wiki/File:Infobox_info_icon.svg -->
+        <img src="./assets/Infobox_info_icon.svg"
+          alt="Lowercase 'i' inscribed in a circle"
+          id="info-icon">
 
-<body>
-  <script src="./node_modules/pixi.js/dist/pixi.min.js"></script>
-  <script src="./node_modules/tweedle.js/dist/tweedle.umd.min.js"></script>
-  <script src="./js/app.js"></script>
+        <div id="navigation-info">
+          <p class="info-txt">
+            Click<span class="bold-txt"> Go </span> to start from the beginning!
+          </p>
 
-</body>
+          <p class="info-txt">
+            Click<span class="bold-txt"> the circles </span>to jump to a specific part of the course!
+          </p>
+        </div>
+        <div class="start-course">
+          <h1 class="ready-set-go">READY...</h1>
+          <h1 class="ready-set-go">SET...</h1>
+          <h1 class="ready-set-go" id="go-button">GO!</h1>
+        </div>
+      </nav>
+
+      <div id="map-view">
+        <!-- Sweepstakes Logo Source: https://cmubuggy.org/history/sweepstakes -->
+        <img src="./assets/pui buggy course.svg"
+          alt="Simplified Diagram of Buggy Racecourse"
+          id="course-img">
+      </div>
+    </div>
+    
+  </body>
 </html>
