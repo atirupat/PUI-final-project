@@ -1,4 +1,4 @@
-import { SVG } from '@svgdotjs/svg.js';
+import { SVG, extend as SVGextend, Element as SVGElement } from '@svgdotjs/svg.js'
 
 SVG.on(document, 'DOMContentLoaded', function() {
   let draw = SVG().addTo('body').size(300, 300);
