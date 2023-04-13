@@ -6,12 +6,17 @@ console.log(roadHeight);
 console.log(roadLength);
 
 SVG.on(document, 'DOMContentLoaded', function() {
-  // Draw Bugg
   let draw = SVG().addTo('.buggy-road').size(roadLength, roadHeight*2);
+  // Draw Buggy
+  let buggyImage = draw.image('./assets/black-buggy.png');
+  buggyImage.size(200,200);
+  buggyImage.attr({x:0, y:0});
+
+  // Draw Road
   let rect = draw.rect(roadLength, roadHeight).attr({ fill: '#f06' });
 
   // calculate y position of road
-  const roadPositionY = roadHeight/2;
+  const roadPositionY = 122;
 
   rect.attr({ x: 0, y: roadPositionY})
 })
