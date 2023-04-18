@@ -189,7 +189,7 @@ header {
   padding-right: 1vw;
 }
 
-/* Content */
+/* General Content Styling */
 .display-content {
   box-sizing: border-box;
 
@@ -203,8 +203,7 @@ header {
   background-color: #9ea295;
 }
 
-/* Front Hills Content */
-#front-hills {
+.begin-section {
   width: 60vw;
 
   text-align: center;
@@ -237,6 +236,27 @@ header {
   padding: 2%;
   font-weight: 600;
 }
+
+.info-template {
+  box-sizing: border-box;
+
+  padding-top: 10vh;
+  width: fit-content;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+
+  justify-content: space-around;
+  align-items: center;
+  background-color:blue;
+}
+
+video {
+  margin-bottom: 10%;
+  height: 80%;
+  width: auto;
+}
+
 /* Buggy Animation */
 .buggy-road {
   box-sizing: border-box;
