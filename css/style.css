@@ -167,20 +167,34 @@ a.button {
 
   position: absolute;
 
-  left: 0; 
-  right: 0; 
-  top: 0;
+  left: 47%; 
+  top: 8%;
   bottom: 0;
   margin: auto;
 
-  width: 200px;
-  height: 100px;
+  width: 347px;
+  height: 235px;
 
   text-align: center;
 
   padding: 2%;
 
-  background-color: rgba(255, 255, 255, 0.7);
+  background-color: rgba(255, 255, 255, 100);
+
+  justify-content: space-around;
+}
+
+.map-hover-title {
+  font-size: 48px;
+  font-weight: 900;
+
+  width: fit-content;
+
+  border: solid;
+  border-color: black;
+  border-width: 0 0 3px 0;
+
+  padding-bottom: 5%;
 }
 
 /* Positions of Specific Checkpoint Markers */

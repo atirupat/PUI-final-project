@@ -1,5 +1,6 @@
 // Global Variables
 const goButton = document.querySelector('#go-button');
+const checkpointMarker = document.querySelectorAll('.checkpoint-marker');
 
 // class NavHover {
 //   constructor()
@@ -12,4 +13,6 @@ function pressGoButton() {
   goButton.style.filter = 'none';
 }
 
-
+function testCheckPoints() {
+  
+}
