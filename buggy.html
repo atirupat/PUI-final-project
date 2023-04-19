@@ -6,6 +6,8 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./css/style.css"/>
+  <!-- Linking to JQuery API -->
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
   <!-- Linking to SVG.js Library -->
   <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
   <script type="module" src="./js/buggy.js"></script>
@@ -14,9 +16,11 @@
 
 <body id="buggy-course">
   <header>
-    <img src="./assets/sweepstakes_logo_notext_white.svg"
-      alt="Buggy Sweepstakes Logo: a top-view of a buggy with elements of Carnegie Mellon's Thistle logo incorporated"
-      id="sweepstakes-logo-header">
+    <a href="./index.html">
+      <img src="./assets/sweepstakes_logo_notext_white.svg"
+        alt="Buggy Sweepstakes Logo: a top-view of a buggy with elements of Carnegie Mellon's Thistle logo incorporated"
+        id="sweepstakes-logo-header">
+    </a>
 
     <div class="position-animation"></div>
     <div class="location-txt">
@@ -26,7 +30,7 @@
     </div>
   </header>
 
-  <!-- Text and Stats are sourced from the Buggy Alumni Association (cmubuggy.org) unless otherwise noted -->
+  <!-- Text and Stats are sourced from the Buggy Alumni Association (cmubuggy.org) unless otherwise stated -->
   <div class="display-content">
     <div class="begin-section" id="front-hills">
       <p class="section-title" id="front-hill-title">
@@ -83,7 +87,7 @@
       </p>
     </div>
 
-    <div class="begin-section" id="back-hills">
+    <div class="begin-section" id="backhills">
       <p class="section-title" id="back-hills-title">
         Back Hills
       </p>

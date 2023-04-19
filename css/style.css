@@ -22,7 +22,7 @@ p, span, h1, h3 {
   width: 100vw;
   height: 100vh;
 
-  background-color: blue;
+  background-color: #779443;
 }
 
 /* -------------------------------------------------------------------------------------------------------------- */
@@ -96,6 +96,10 @@ p, span, h1, h3 {
   color: white;
 }
 
+a.button {
+  text-decoration: none;
+}
+
 #go-button {
   background-color: #466db4;
   margin-left: 2%;
@@ -104,25 +108,85 @@ p, span, h1, h3 {
   height: fit-content;
 
   filter: drop-shadow(4px -6px 2px #454545);
+}
 
+#go-button:hover {
+  background-color: #6a8dc8;
 }
 /* -------------------------------------------------------------------------------------------------------------- */
 /* Interactive Course Map Display */
 #map-view {
   box-sizing: border-box;
-  flex-grow: 0;
+  flex-grow: 1;
 
   height: auto;
   width: auto;
 
   display: flex;
   justify-content: center;
-  background-color: #cad9a9;
+}
+
+#map-with-checkpoints {
+  width: fit-content;
+  margin: auto;
 }
 
 #course-img {
   height: auto;
-  width: 800px;
+  width: 1200px;
+}
+
+.checkpoint-marker {
+  position: absolute;
+
+  box-sizing: border-box;
+  width: 40px;
+  height: 40px;
+
+  border-radius: 50%;
+
+  background-color: black;
+  text-align: center;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.marker-txt {
+  color: white;
+
+  font-weight: bold;
+  font-size: 25px;
+}
+
+.map-overlay {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+
+  position: absolute;
+
+  left: 0; 
+  right: 0; 
+  top: 0;
+  bottom: 0;
+  margin: auto;
+
+  width: 200px;
+  height: 100px;
+
+  text-align: center;
+
+  padding: 2%;
+
+  background-color: rgba(255, 255, 255, 0.7);
+}
+
+/* Positions of Specific Checkpoint Markers */
+#marker-one {
+  left: 83%;
+  top: 20px;
 }
 
 /* -------------------------------------------------------------------------------------------------------------- */
@@ -194,17 +258,19 @@ header {
   box-sizing: border-box;
 
   padding-top: 10vh;
-  width: fit-content;
+  /* width: fit-content; */
   height: 100%;
   display: flex;
   flex-direction: row;
 
   justify-content: space-around;
   background-color: #9ea295;
+
+  overflow-x: scroll;
 }
 
 .begin-section {
-  width: 60vw;
+  width: 30vw;
 
   text-align: center;
 
@@ -244,13 +310,15 @@ header {
   padding-left: 1%;
   padding-right: 1%;
   width: max-content;
-  height: 100%;
+  height: 80%;
   display: flex;
   flex-direction: row;
 
   justify-content: space-around;
   align-items: center;
   background-color:rgb(232, 232, 255);
+
+  margin-bottom: 10%;
 }
 
 video {
@@ -285,7 +353,8 @@ video {
 }
 
 .info-txt {
-
+  box-sizing: border-box;
+  max-height: 80%;
 }
 /* Buggy Animation */
 .buggy-road {
