@@ -109,7 +109,7 @@ a.button {
 
   height: fit-content;
 
-  filter: drop-shadow(4px -6px 2px #454545);
+  filter: drop-shadow(4px 6px 2px #454545);
 }
 
 #go-button:hover {
@@ -154,6 +154,12 @@ a.button {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  filter: drop-shadow(2px 3px 1px #454545);
+}
+
+.checkpoint-marker:hover {
+  background-color: #454545;
 }
 
 .marker-txt {
@@ -171,8 +177,8 @@ a.button {
   position: absolute;
 
   left: 30.75%; 
-  /* top: 8%; */
   bottom: 28%;
+  z-index: 10;
 
   width: 347px;
   height: 235px;
