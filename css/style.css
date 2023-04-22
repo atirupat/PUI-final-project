@@ -23,6 +23,8 @@ p, span, h1, h3 {
   height: 100vh;
 
   background-color: #779443;
+
+  overflow-y: hidden;
 }
 
 /* -------------------------------------------------------------------------------------------------------------- */
@@ -168,10 +170,9 @@ a.button {
 
   position: absolute;
 
-  left: 47%; 
-  top: 8%;
-  bottom: 0;
-  margin: auto;
+  left: 30.75%; 
+  /* top: 8%; */
+  bottom: 28%;
 
   width: 347px;
   height: 235px;
@@ -180,7 +181,7 @@ a.button {
 
   padding: 2%;
 
-  background-color: rgba(255, 255, 255, 100);
+  background-color: #e8ebe3;
 
   justify-content: space-around;
 }
@@ -294,7 +295,7 @@ header {
 
   padding-top: 10vh;
   /* width: fit-content; */
-  height: 100%;
+  height: 100vh;
   display: flex;
   flex-direction: row;
 
@@ -302,6 +303,7 @@ header {
   background-color: #9ea295;
 
   overflow-x: scroll;
+  overflow-y: hidden;
 }
 
 .begin-section {
