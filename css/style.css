@@ -127,6 +127,7 @@ a.button {
 }
 
 #map-with-checkpoints {
+  position: relative;
   width: fit-content;
   margin: auto;
 }
@@ -199,8 +200,8 @@ a.button {
 
 /* Positions of Specific Checkpoint Markers */
 #marker-one {
-  left: 83%;
-  top: 20px;
+  right: 8%;
+  top: 14%;
 }
 
 /* -------------------------------------------------------------------------------------------------------------- */
