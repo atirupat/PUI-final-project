@@ -1,19 +1,27 @@
-// Global Variables
-const goButton = document.querySelector('#go-button');
-const checkpointMarker = document.querySelector('.checkpoint-marker');
+document.addEventListener("DOMContentLoaded", function() { 
 
-// class NavHover {
-//   constructor()
-// }
+  // Global Variables
+  const goButton = document.querySelector('#go-button');
+  const checkpointMarker = document.querySelector('.checkpoint-marker');
 
-goButton.addEventListener('click', () => {pressGoButton()});
-checkpointMarker.addEventListener('mouseOver', () => {testCheckPoints()});
+  // Get each Checkpoint Marker
+  const markerOne = document.getElementById('marker-one');
+  const markerTwo = document.querySelector('#marker-two');
+  const markerThree = document.querySelector('#marker-three');
+  const markerFour = document.querySelector('#marker-four');
+  const markerFive = document.querySelector('#marker-five');
 
-function pressGoButton() {
-  goButton.style.backgroundColor = '#002861';
-  goButton.style.filter = 'none';
-}
+  console.log(markerOne);
+  // Create and Display Overlays when Hovering over Checkpoints
 
-function testCheckPoints() {
- checkpointMarker.style.backgroundColor = '#989898';
-}
+  if (markerOne) {
+    markerOne.addEventListener('mouseover', createOverlayOne, false);
+  }
+
+  function createOverlayOne () {
+    console.log('function entered');
+
+    
+  }
+
+});
