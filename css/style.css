@@ -200,8 +200,28 @@ a.button {
 
 /* Positions of Specific Checkpoint Markers */
 #marker-one {
-  right: 8%;
+  right: 6%;
   top: 14%;
+}
+
+#marker-two {
+  right: 35%;
+  top: 80%;
+}
+
+#marker-three {
+  right: 80%;
+  top: 63%;
+}
+
+#marker-four {
+  right: 88%;
+  top: 20%;
+}
+
+#marker-five {
+  right: 35%;
+  top: 25%;
 }
 
 /* -------------------------------------------------------------------------------------------------------------- */
