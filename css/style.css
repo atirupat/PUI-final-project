@@ -205,7 +205,7 @@ a.button {
   font-size: 48px;
   font-weight: 900;
 
-  width: 90%;
+  width: 95%;
 
   border: solid;
   border-color: black;
@@ -220,6 +220,10 @@ a.button {
   font-style: italic;
   font-size: 20px;
   font-weight: 700;
+}
+
+#front-hill-ol {
+  display: none;
 }
 /* Positions of Specific Checkpoint Markers */
 #marker-one {

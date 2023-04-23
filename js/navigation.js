@@ -1,17 +1,17 @@
 document.addEventListener("DOMContentLoaded", function() { 
 
   // Global Variables
-  const goButton = document.querySelector('#go-button');
-  const checkpointMarker = document.querySelector('.checkpoint-marker');
+//   const goButton = document.querySelector('#go-button');
+//   const checkpointMarker = document.querySelector('.checkpoint-marker');
 
   // Get each Checkpoint Marker
-  const markerOne = document.getElementById('marker-one');
-  const markerTwo = document.querySelector('#marker-two');
-  const markerThree = document.querySelector('#marker-three');
-  const markerFour = document.querySelector('#marker-four');
-  const markerFive = document.querySelector('#marker-five');
+//   const markerOne = document.getElementById('marker-one');
+//   const markerTwo = document.querySelector('#marker-two');
+//   const markerThree = document.querySelector('#marker-three');
+//   const markerFour = document.querySelector('#marker-four');
+//   const markerFive = document.querySelector('#marker-five');
 
-  console.log(markerOne);
+//   console.log(markerOne);
   // Create and Display Overlays when Hovering over Checkpoints
   // markerOne.addEventListener('mouseover', createOverlay, false);
 
@@ -37,16 +37,14 @@ document.addEventListener("DOMContentLoaded", function() {
   //   overlayText.innerText = 'Click to learn about Buggy and the Race';
   // }
 
-  $overlay = $('.map-overlay');
-  $('checkpoint-marker').hover(
-      // when hovered
-      function() {
-          $overlay.css('display','block');
-      },
-      // when NOT hovered
-      function() {
-          $overlay.css('display','none');
-      }
-  );
+    //Using JQuery API to Display Informative Overlays when Hovering Over Checkpoint Markers 
+    $('#marker-one').hover(
+        function() {
+            $('#front-hill-ol').fadeIn( 200 );
+            $('#front-hill-ol').css('display', 'flex');
+        }, function() {
+            // $('#query-test').fadeTo(500, 0 );
+            $('#front-hill-ol').css('display', 'none');
+    });
 });
 
