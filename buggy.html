@@ -8,6 +8,11 @@
   <link rel="stylesheet" href="./css/style.css"/>
   <!-- Linking to JQuery API -->
   <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+  <!-- Linking to JQuery Advanced Progress Tracker Plug-in. Source: https://github.com/Manostion/Advanced-jQuery-scroll-progress-tracker  -->
+  <link href="css/advanced-progress-tracker.min.css" rel="stylesheet" />
+  <script src="advanced-progress-tracker.js"></script>
+  
   <!-- Linking to SVG.js Library -->
   <script src="https://cdn.jsdelivr.net/npm/@svgdotjs/svg.js@3.0/dist/svg.min.js"></script>
   <script type="module" src="./js/buggy.js"></script>
@@ -97,6 +102,12 @@
     </div>
   </div>
 
-  <div class="buggy-road"></div>
+  <div class="buggy-road">
+    <img src="./assets/black-buggy.png"
+      alt="Black silhouette of a buggy, a long aerodynamic vehicle with wheels and a long handle in the back"
+      id="buggy-ol">
+
+    <div id="road"></div>
+  </div>
 </body>
 </html>

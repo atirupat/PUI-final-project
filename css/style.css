@@ -320,8 +320,8 @@ header {
   box-sizing: border-box;
 
   padding-top: 10vh;
-  /* width: fit-content; */
-  height: 100vh;
+  width: fit-content;
+  height: 90vh;
   display: flex;
   flex-direction: row;
 
@@ -330,10 +330,21 @@ header {
 
   overflow-x: scroll;
   overflow-y: hidden;
+
+  /* Remove Bottom Scrollbar */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+/* Removes bottom scrollbar from Display Content in Chrome, Opera, and Safari 
+  Code Source: https://www.w3schools.com/howto/howto_css_hide_scrollbars.asp*/
+.display-content::-webkit-scrollbar {
+  display: none; 
 }
 
 .begin-section {
   width: 30vw;
+  height: inherit;
 
   text-align: center;
 
@@ -398,6 +409,7 @@ video {
 
   padding-right: 5%;
   
+  
 }
 .info-title {
   font-size: larger;
@@ -422,24 +434,22 @@ video {
 /* Buggy Animation */
 .buggy-road {
   box-sizing: border-box;
-  position: fixed;
+  position: relative;
   overflow-y: hidden;
 
-  /* fixing div to bottom left corner */
+  /* fixing div to bottom left corner
   bottom: 0;
-  left: 0;
+  left: 0; */
 
   width: 100%;
-  min-height: 10%;
-  height: auto;
+  height: 10%;
 
-  /* background-color: #cad9a9; */
+  background-color: #cad9a9;
 
   flex-grow: 1;
   margin-bottom: 0px;
 }
 
-svg {
-  padding: 0%;
-  margin: 0%;
+#buggy-ol {
+
 }
