@@ -202,10 +202,8 @@ a.button {
 }
 
 .map-hover-title {
-  font-size: 48px;
+  font-size: 46px;
   font-weight: 900;
-
-  width: 95%;
 
   border: solid;
   border-color: black;
@@ -219,12 +217,14 @@ a.button {
 
   font-style: italic;
   font-size: 20px;
-  font-weight: 700;
+  font-weight: 400;
 }
 
-#front-hill-ol {
+/* Setting Overlay Displays to None, Will Display When Hovering Over Respective Checkpoints */
+#front-hill-ol, #free-roll-ol, #schenley-ol, #chute-ol, #back-hill-ol {
   display: none;
 }
+
 /* Positions of Specific Checkpoint Markers */
 #marker-one {
   right: 6%;

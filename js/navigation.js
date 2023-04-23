@@ -43,8 +43,39 @@ document.addEventListener("DOMContentLoaded", function() {
             $('#front-hill-ol').fadeIn( 200 );
             $('#front-hill-ol').css('display', 'flex');
         }, function() {
-            // $('#query-test').fadeTo(500, 0 );
             $('#front-hill-ol').css('display', 'none');
+    });
+
+    $('#marker-two').hover(
+      function() {
+          $('#free-roll-ol').fadeIn( 200 );
+          $('#free-roll-ol').css('display', 'flex');
+      }, function() {
+          $('#free-roll-ol').css('display', 'none');
+     });
+
+    $('#marker-three').hover(
+    function() {
+        $('#schenley-ol').fadeIn( 200 );
+        $('#schenley-ol').css('display', 'flex');
+    }, function() {
+        $('#schenley-ol').css('display', 'none');
+    });
+
+    $('#marker-four').hover(
+      function() {
+          $('#chute-ol').fadeIn( 200 );
+          $('#chute-ol').css('display', 'flex');
+      }, function() {
+          $('#chute-ol').css('display', 'none');
+    });
+
+    $('#marker-five').hover(
+      function() {
+          $('#back-hill-ol').fadeIn( 200 );
+          $('#back-hill-ol').css('display', 'flex');
+      }, function() {
+          $('#back-hill-ol').css('display', 'none');
     });
 });
 
