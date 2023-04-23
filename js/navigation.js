@@ -13,15 +13,28 @@ document.addEventListener("DOMContentLoaded", function() {
 
   console.log(markerOne);
   // Create and Display Overlays when Hovering over Checkpoints
+  markerOne.addEventListener('mouseover', createOverlay, false);
 
-  if (markerOne) {
-    markerOne.addEventListener('mouseover', createOverlayOne, false);
-  }
-
-  function createOverlayOne () {
+  function createOverlay () {
     console.log('function entered');
+    const template = document.querySelector('.nav-overlay');
+    const clone = template.content.cloneNode(true);
 
-    
+    element = clone.querySelector('.map-overlay');
+    console.log(element);
+
+    const mapView = document.querySelector('#map-view');
+    mapView.prepend(element);
+
+    updateOverlay(element);
   }
 
 });
+
+function updateOverlay(overlayInstance) {
+  const overlayTitle = document.querySelector('.map-hover-title');
+  const overlayText = document.querySelector('.map-hover-txt');
+
+  overlayTitle.innerText = '"Front Hills"';
+  overlayText.innerText = 'Click to learn about Buggy and the Race';
+}
