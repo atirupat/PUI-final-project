@@ -13,28 +13,40 @@ document.addEventListener("DOMContentLoaded", function() {
 
   console.log(markerOne);
   // Create and Display Overlays when Hovering over Checkpoints
-  markerOne.addEventListener('mouseover', createOverlay, false);
+  // markerOne.addEventListener('mouseover', createOverlay, false);
 
-  function createOverlay () {
-    console.log('function entered');
-    const template = document.querySelector('.nav-overlay');
-    const clone = template.content.cloneNode(true);
+  // function createOverlay () {
+  //   console.log('function entered');
+  //   const template = document.querySelector('.nav-overlay');
+  //   const clone = template.content.cloneNode(true);
 
-    element = clone.querySelector('.map-overlay');
-    console.log(element);
+  //   element = clone.querySelector('.map-overlay');
+  //   console.log(element);
 
-    const mapView = document.querySelector('#map-view');
-    mapView.prepend(element);
+  //   const mapView = document.querySelector('#map-view');
+  //   mapView.prepend(element);
 
-    updateOverlay(element);
-  }
+  //   updateOverlay(element);
+  // }
 
+  // function updateOverlay(overlayInstance) {
+  //   const overlayTitle = document.querySelector('.map-hover-title');
+  //   const overlayText = document.querySelector('.map-hover-txt');
+  
+  //   overlayTitle.innerText = '"Front Hills"';
+  //   overlayText.innerText = 'Click to learn about Buggy and the Race';
+  // }
+
+  $overlay = $('.map-overlay');
+  $('checkpoint-marker').hover(
+      // when hovered
+      function() {
+          $overlay.css('display','block');
+      },
+      // when NOT hovered
+      function() {
+          $overlay.css('display','none');
+      }
+  );
 });
 
-function updateOverlay(overlayInstance) {
-  const overlayTitle = document.querySelector('.map-hover-title');
-  const overlayText = document.querySelector('.map-hover-txt');
-
-  overlayTitle.innerText = '"Front Hills"';
-  overlayText.innerText = 'Click to learn about Buggy and the Race';
-}
