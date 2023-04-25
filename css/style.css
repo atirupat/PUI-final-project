@@ -320,9 +320,9 @@ header {
   box-sizing: border-box;
 
   margin-top: 10vh;
-  padding-bottom: 20vh;
+  padding-bottom: 22vh;
   width: fit-content;
-  height: 90vh;
+  height: auto;
   display: flex;
   flex-direction: row;
 
@@ -381,19 +381,15 @@ header {
 .info-template {
   box-sizing: border-box;
 
-  padding-top: 10vh;
-  padding-left: 1%;
-  padding-right: 1%;
+  padding: 1%;
   width: max-content;
-  height: 80%;
+  height: 100%;
   display: flex;
   flex-direction: row;
 
   justify-content: space-around;
   align-items: center;
   background-color:rgb(232, 232, 255);
-
-  margin-bottom: 10%;
 }
 
 video {
@@ -404,14 +400,17 @@ video {
 }
 
 .info-content {
-  margin-bottom: 10%;
-  height: 80%;
-  width: 20vw;
+  /* margin-bottom: 10%; */
+  height: 100%;
+  min-width: 300px;
+  max-width: 40vw;
 
   padding-right: 5%;
-  
-  
+
+  padding-top: .5%;
+  padding-bottom: .5%;
 }
+
 .info-title {
   font-size: larger;
   font-weight: bold;
@@ -421,16 +420,18 @@ video {
 }
 
 .info-img {
-  height: 30%;
-  float: left;
+  /* height: 30%; */
+  width: 80%;
+  /* float: left; */
 
   padding-right: 2%;
+  padding-left: 2%;
   padding-bottom: 2%;
 }
 
 .info-txt {
   box-sizing: border-box;
-  max-height: 80%;
+  height: inherit;
 }
 /* Buggy Animation */
 .buggy-road {
