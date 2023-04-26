@@ -48,5 +48,20 @@ document.addEventListener("DOMContentLoaded", function() {
       }, function() {
           $('#back-hill-ol').css('display', 'none');
     });
+
+    // Testing to See if I can send to scroll position
+    // $('#marker-two').on('click', function() {
+    //   window.location.href = './buggy.html#chute';
+    //   $('html, #buggy-course').animate({
+    //     scrollLeft: $("#free-roll").offset().top
+    //   }, 0);
+    // });
+
+     	
+
+// $( "#target" ).on( "click", function() {
+//   alert( "Handler for `click` called." );
+// } );
+
 });
 
