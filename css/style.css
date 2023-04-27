@@ -324,9 +324,10 @@ header {
   box-sizing: border-box;
 
   margin-top: 10vh;
-  padding-bottom: 22vh;
+  margin-bottom: 20vh;
+  /* padding-bottom: 22vh; */
   width: fit-content;
-  height: auto;
+  height: 100%;
   display: flex;
   flex-direction: row;
 
@@ -348,13 +349,13 @@ header {
 }
 
 .begin-section {
-  width: 30vw;
+  width: 20vw;
   height: inherit;
 
   text-align: center;
 
-  padding-left: auto;
-  padding-right: auto;
+  padding-left: 2%;
+  padding-right: 2%;
 
   display: flex;
   flex-direction: column;
@@ -440,6 +441,7 @@ iframe {
   box-sizing: border-box;
   height: inherit;
 }
+
 /* Buggy Animation */
 .buggy-road {
   box-sizing: border-box;
@@ -459,6 +461,16 @@ iframe {
 
   flex-grow: 1;
   margin-bottom: 0px;
+
+  z-index: 10;
+}
+
+@media only screen and (max-device-width : 730px) {
+  .buggy-road {
+    position: fixed;
+    bottom: 0;
+    left: 0;   
+  }
 }
 
 #store-buggy-sprite {
