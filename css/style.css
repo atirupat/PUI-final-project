@@ -3,6 +3,10 @@
   margin: 0%;
 }
 
+body {
+  overflow-y: hidden;
+}
+
 /* -------------------------------------------------------------------------------------------------------------- */
 /* Generic Text Styling */
 p, span, h1, h3 {
@@ -259,7 +263,7 @@ a.button {
   overflow-x: scroll;
   overflow-y: hidden;
 
-  width: 600vw;
+  width: fit-content;
   height: 100vh;
 
   display: flex;
@@ -382,8 +386,8 @@ header {
   box-sizing: border-box;
 
   padding: 1%;
-  width: max-content;
-  height: 100%;
+  width: fit-content;
+  height: inherit;
   display: flex;
   flex-direction: row;
 
@@ -392,15 +396,18 @@ header {
   background-color:rgb(232, 232, 255);
 }
 
-video {
+iframe {
+  margin-top: 10%;
   margin-bottom: 10%;
   max-height: 80%;
   min-width: 70%;
   width: auto;
+  height: 80%;
 }
 
 .info-content {
-  /* margin-bottom: 10%; */
+  margin-top: 10%;
+  margin-bottom: 10%;
   height: 100%;
   min-width: 300px;
   max-width: 40vw;
