@@ -9,7 +9,7 @@ body {
 
 /* -------------------------------------------------------------------------------------------------------------- */
 /* Generic Text Styling */
-p, span, h1, h3 {
+p, span, h1, h3, button {
   font-family: 'Roboto', sans-serif;
 }
 
@@ -447,7 +447,7 @@ iframe {
   box-sizing: border-box;
   margin: auto;
   padding: 5%;
-  background-color: crimson;
+  /* background-color: crimson; */
 
   display: flex;
   flex-direction: column;
@@ -482,9 +482,37 @@ iframe {
   height: 75%;
 }
 
-/* Featured Logo Specific Stylings */
+/* Featured Teams Specific Stylings */
 .team-logo {
-  height: 80%;
+  height: 70%;
+}
+
+.team-name {
+  box-sizing: border-box;
+  font-size: x-large;
+  font-weight: 600;
+  text-decoration: underline solid black;
+  padding: 2% 0%;
+}
+
+/* button styling */
+.visit-team {
+  box-sizing: border-box;
+
+  margin-top: 5%;
+  padding: 2%;
+
+  font-size: 1.5em;
+  font-weight: 600;
+
+  color: black;
+  background-color: ivory;
+
+  border: none;
+}
+
+.visit-team:hover {
+  background-color: lightgray;
 }
 
 
@@ -513,13 +541,13 @@ iframe {
   z-index: 10;
 }
 
-@media only screen and (max-device-width : 730px) {
+/* @media only screen and (max-device-width : 730px) {
   .buggy-road {
     position: fixed;
     bottom: 0;
     left: 0;   
   }
-}
+} */
 
 #store-buggy-sprite {
   box-sizing: border-box;
