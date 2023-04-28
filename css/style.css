@@ -261,6 +261,7 @@ a.button {
 #buggy-course {
   background-color:skyblue;
 
+  box-sizing: border-box;
   overflow-x: scroll;
   overflow-y: hidden;
 
@@ -269,8 +270,6 @@ a.button {
 
   display: flex;
   flex-direction: column;
-
-  box-sizing: border-box;
 
   justify-content: space-between;
 } 
@@ -327,7 +326,7 @@ header {
   margin-top: 10vh;
   margin-bottom: 20vh;
   /* padding-bottom: 22vh; */
-  width: fit-content;
+  width: inherit;
   height: 100%;
   display: flex;
   flex-direction: row;
@@ -352,7 +351,7 @@ header {
 /* Styling for Section Title Divs */
 .begin-section {
   box-sizing: border-box;
-  width: 20vw;
+  width: auto;
   height: inherit;
 
   text-align: center;
@@ -415,6 +414,8 @@ iframe {
 
   padding-left: 2%;
   padding-right: 2%;
+
+  margin: auto;
 
   display: flex;
 }
@@ -508,7 +509,7 @@ iframe {
   margin-top: 5%;
   padding: 2%;
 
-  font-size: 1.5em;
+  font-size: x-large;
   font-weight: 600;
 
   color: black;
