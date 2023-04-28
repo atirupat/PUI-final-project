@@ -351,13 +351,14 @@ header {
 
 /* Styling for Section Title Divs */
 .begin-section {
+  box-sizing: border-box;
   width: 20vw;
   height: inherit;
 
   text-align: center;
 
-  padding-left: 2%;
-  padding-right: 2%;
+  padding-left: 1%;
+  padding-right: 1%;
 
   display: flex;
   flex-direction: column;
@@ -480,6 +481,12 @@ iframe {
 .featured-buggies {
   height: 75%;
 }
+
+/* Featured Logo Specific Stylings */
+.team-logo {
+  height: 80%;
+}
+
 
 
 /* ------------------------------------------------------------------------------------------------------- */
