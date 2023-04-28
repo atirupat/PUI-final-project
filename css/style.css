@@ -119,6 +119,7 @@ a.button {
 #go-button:hover {
   background-color: #6a8dc8;
 }
+
 /* -------------------------------------------------------------------------------------------------------------- */
 /* Interactive Course Map Display */
 #map-view {
@@ -456,27 +457,28 @@ iframe {
   text-align: center;
 }
 
-.featured-buggies {
-  height: 75%;
-}
-
-.buggy-img-caption {
+.img-caption {
   box-sizing: border-box;
   font-size: medium;
 }
 
-.buggy-img-caption-italics {
+.img-caption-italics {
   box-sizing: border-box;
   font-size: medium;
   font-style: italic;
 }
 
-.buggy-name {
+.img-name {
   box-sizing: border-box;
   font-size: large;
   font-weight: 600;
   text-decoration: underline solid black;
   padding: 2% 0%;
+}
+
+/* Featured Buggy Specific Stylings */
+.featured-buggies {
+  height: 75%;
 }
 
 
