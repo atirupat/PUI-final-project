@@ -495,6 +495,12 @@ iframe {
   padding: 2% 0%;
 }
 
+.team-photo {
+  box-sizing: border-box;
+  height: 80%;
+  margin: auto;
+}
+
 /* button styling */
 .visit-team {
   box-sizing: border-box;
