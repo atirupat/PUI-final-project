@@ -529,79 +529,117 @@ iframe {
 }
 
 /* -------------------------- */
+/* Buggy Records */
+.display-record {
+  box-sizing: border-box;
+
+  background-color: white;
+  border-radius: 2%;
+
+  width: auto;
+  min-width: 600px;
+  height: inherit;
+
+  padding: .1%;
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  justify-content: center;
+
+  margin: 0 .1%;
+}
+
+.time-year {
+  font-weight: bold;
+  font-size: 2em;
+}
+
+.record-team-name {
+  box-sizing: border-box;
+
+  font-size: larger;
+  font-weight: 500;
+  text-decoration: underline solid black;
+}
+
+.record-video {
+  width: 100%;
+  height: 60%;
+}
+/* -------------------------- */
 /* Buggy Leaderboard */
-  .leaderboard {
-    box-sizing: border-box;
+.leaderboard {
+  box-sizing: border-box;
 
-    height: 100%;
+  height: 100%;
 
-    display: flex;
-    flex-direction: row;
-    
-    align-items: center;
-  }
+  display: flex;
+  flex-direction: row;
+  
+  align-items: center;
+}
 
-  #buggy-2023 {
-    height: 80%;
-  }
+#buggy-2023 {
+  height: 80%;
+}
 
-  .times-by-division {
-    box-sizing: border-box;
+.times-by-division {
+  box-sizing: border-box;
 
-    width: auto;
-    min-width: 300px;
-    height: auto;
+  width: auto;
+  min-width: 300px;
+  height: auto;
 
-    display: flex;
-    flex-direction: column;
+  display: flex;
+  flex-direction: column;
 
-    text-align: left;
+  text-align: left;
 
-    padding: 3%;
+  padding: 3%;
 
-    background-color: #ffffff;
-    border-radius: 2%;
+  background-color: #ffffff;
+  border-radius: 2%;
 
-    margin: 0 2%;
-  }
+  margin: 0 2%;
+}
 
-  .division-name {
-    box-sizing: border-box;
-    font-size: x-large;
-    font-weight: 600;
-    padding: 2% 0%;
-  }
+.division-name {
+  box-sizing: border-box;
+  font-size: x-large;
+  font-weight: 600;
+  padding: 2% 0%;
+}
 
-  .display-rankings {
-    box-sizing: border-box;
+.display-rankings {
+  box-sizing: border-box;
 
-    width: auto;
-    height: auto;
+  width: auto;
+  height: auto;
 
-    display: flex;
-    flex-direction: row;
-    
-    justify-content: space-between;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  
+  justify-content: space-between;
+  align-items: center;
 
-    border-bottom: black solid 1px;
-  }
+  border-bottom: black solid 1px;
+}
 
-  .place-won {
-    box-sizing: border-box;
+.place-won {
+  box-sizing: border-box;
 
-    font-size: larger;
-    font-weight: bold;
+  font-size: larger;
+  font-weight: bold;
 
-    padding-top: .5%;
-    padding-bottom: .5%;
-  }
+  padding-top: .5%;
+  padding-bottom: .5%;
+}
 
-  .leaderboard-team-name {
-    box-sizing: border-box;
-
-    font-size: larger;
-  }
+.leaderboard-team-name {
+  box-sizing: border-box;
+  font-size: larger;
+}
 
 /* ------------------------------------------------------------------------------------------------------- */
 /* Buggy Overlay */
