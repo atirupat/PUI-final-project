@@ -390,8 +390,8 @@ header {
 .info-template {
   box-sizing: border-box;
 
-  padding: 1%;
-  width: fit-content;
+  padding: .1%;
+  width: auto;
   height: inherit;
   display: flex;
   flex-direction: row;
@@ -411,6 +411,7 @@ iframe {
 }
 
 .info-content {
+  width: auto;
   height: inherit;
 
   padding-left: 2%;
@@ -421,29 +422,53 @@ iframe {
   display: flex;
 }
 
+.info-title-img {
+  box-sizing: border-box;
+
+  display: flex;
+  flex-direction: column;
+
+  min-width: 600px;
+
+  justify-content: center;
+}
+
 .info-title {
-  font-size: larger;
+  font-size: x-large;
   font-weight: bold;
-  text-align: left;
+  text-align: center;
 
   padding-bottom: 2%;
 }
 
 .info-img {
-  /* height: 30%; */
-  width: 80%;
-  /* float: left; */
+  width: auto;
+  height: 70%;
 
   padding-right: 2%;
   padding-left: 2%;
   padding-bottom: 2%;
 }
 
-.info-txt {
+.description-txt {
   box-sizing: border-box;
-  height: inherit;
+
+  margin: auto;
+  padding: 0 .25%;
+
+  min-width: 400px;
+  max-width: 600px;
+  height: fit-content;
 }
 
+#raceday-video {
+  margin: auto;
+
+  max-width: 1000px;
+  min-width: 800px;
+}
+
+/* ------------------------------------------------------ */
 /*Styling for Featured Images and Associated Captions */
 .img-and-caption {
   box-sizing: border-box;
@@ -479,6 +504,7 @@ iframe {
   padding: 2% 0%;
 }
 
+/* ------------------------------------------------------ */
 /* Featured Buggy Specific Stylings */
 .featured-buggies {
   height: 75%;
