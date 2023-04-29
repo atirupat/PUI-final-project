@@ -326,8 +326,6 @@ header {
 
   margin-top: 10vh;
   margin-bottom: 20vh;
-  margin-left: 5vw;
-  margin-right: 5vw;
 
   width: auto;
   height: 100%;
@@ -337,7 +335,7 @@ header {
   justify-content: space-around;
   background-color: #9ea295;
 
-  overflow-x: scroll;
+  overflow-x: visible;
   overflow-y: hidden;
 
   /* Remove Bottom Scrollbar */
