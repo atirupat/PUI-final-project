@@ -485,7 +485,7 @@ iframe {
 
 /* Featured Teams Specific Stylings */
 .team-logo {
-  height: 50%;
+  height: 60%;
 }
 
 .team-name {
@@ -500,6 +500,10 @@ iframe {
   box-sizing: border-box;
   height: 80%;
   margin: auto;
+}
+
+#cia-feature, #sdc-feature {
+  min-width: 600px;
 }
 
 /* visit team button styling */
