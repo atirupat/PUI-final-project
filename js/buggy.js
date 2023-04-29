@@ -1,5 +1,7 @@
 // Global Variables
 
+let locationTxt = 'Front Hills';
+
 // const roadHeight = document.querySelector('.#store-buggy-sprite').clientHeight;
 // const roadLength = document.querySelector('.buggy-road').scrollWidth;
 // console.log(roadHeight);
@@ -24,7 +26,11 @@
 // Add Progress Tracker
 // $('body').progressTracker();
 
-//Use JQuery to Dynamically add buggy Png
+//Use JQuery to Dynamically Change Header Location Text
+
+// $.fn.isInViewport = function() {
+
+// }
 
 
 
