@@ -332,7 +332,7 @@ header {
   display: flex;
   flex-direction: row;
 
-  justify-content: space-around;
+  justify-content: space-between;
   background-color: #9ea295;
 
   overflow-x: visible;
@@ -457,6 +457,7 @@ iframe {
   height: 80%;
 
   text-align: center;
+  
 }
 
 .img-caption {
@@ -502,13 +503,15 @@ iframe {
   margin: auto;
 }
 
-#cia-feature, #sdc-feature {
-  min-width: 600px;
+#cia-feature, #dg-feature, #sdc-feature {
+  min-width: 700px;
 }
 
 /* visit team button styling */
 .visit-team {
   box-sizing: border-box;
+
+  min-width: 200px;
 
   margin-top: 5%;
   padding: 2%;
