@@ -1,36 +1,78 @@
 // Global Variables
 
-let locationTxt = 'Front Hills';
+let locationTxtContents = 'Front Hills';
+let locationTxt = document.querySelector('#display-location');
 
-// const roadHeight = document.querySelector('.#store-buggy-sprite').clientHeight;
-// const roadLength = document.querySelector('.buggy-road').scrollWidth;
-// console.log(roadHeight);
-// console.log(roadLength);
+// Initial left position of '.times-by-division' div
+const initialPosition = $('.buggy-road').position();
 
-// SVG.on(document, 'DOMContentLoaded', function() {
-//   let draw = SVG().addTo('#store-buggy-sprite').size(roadLength, roadHeight);
-//   // Draw Buggy
-//   let buggyImage = draw.image('./assets/black-buggy.png');
-//   buggyImage.size(200,200);
-//   buggyImage.attr({x:0, y:0});
+document.addEventListener("DOMContentLoaded", function() { 
+  console.log(initialPosition);
 
-//   // Draw Road
-//   // let rect = draw.rect(roadLength + 30, roadHeight).attr({ fill: '#f06' });
+  //Use JQuery to Dynamically Change Header Location Text
+  // Function to check if something is in viewport referenced from: https://stackoverflow.com/questions/20791374/jquery-check-if-element-is-visible-in-viewport
+  $.fn.isInViewport = function() {
+    var elementTop = $(this).offset().top;
+    var elementBottom = elementTop + $(this).outerHeight();
 
-//   // // calculate y position of road
-//   // const roadPositionY = 122;
+    var viewportTop = $(window).scrollTop();
+    var viewportBottom = viewportTop + $(window).height();
 
-//   // rect.attr({ x: 0, y: roadPositionY})
-// })
+    return elementBottom > viewportTop && elementTop < viewportBottom;
+  }
 
-// Add Progress Tracker
-// $('body').progressTracker();
+  // $(window).on('scroll', function () {
+  //   if ($('#front-hills').isInViewport()) {
+  //     locationTxtContents = 'Front Hills';
 
-//Use JQuery to Dynamically Change Header Location Text
+  //     locationTxt.innerHTML = locationTxtContents;
+  //     console.log(locationTxt.innerHTML);
+  //   } 
+    
+  //   if ($('#free-roll').isInViewport()) {
+  //     console.log('entered free roll');
+  //     locationTxtContents = 'Free Roll';
 
-// $.fn.isInViewport = function() {
+  //     locationTxt.innerHTML = locationTxtContents;
+  //     console.log(locationTxt.innerHTML);
+  //   }
 
-// }
+  // });
+
+  console.log(locationTxtContents);
+  
+
+  console.log(locationTxt.innerHTML);
+});
+
+// -----------------------------------------------------------------------------------------------------------------------------------------------
+// Update Width of Progress Bar
+$(window).on('scroll', function () {
+  let currentPosition = $('.buggy-road').offset();
+  const documentWidth = $(document).width();
+
+
+  // Subtract length of buggy road from Document Width
+  const buggyRoadWidth = $('.buggy-road').width();
+
+  let newDocumentWidth = documentWidth - buggyRoadWidth;
+
+  // Convert Position of Buggy Road into a Percentage
+  let percentCompleted = (scale(currentPosition.left, initialPosition.left, newDocumentWidth, 0, 100)).toFixed(2) + '%';
+
+  // Change Progress Bar Width in CSS
+  $('.progress-bar').css({width: percentCompleted});
+});
+
+// Mapping Numbers function sourced from: https://stackoverflow.com/questions/10756313/javascript-jquery-map-a-range-of-numbers-to-another-range-of-numbers
+function scale (number, inMin, inMax, outMin, outMax) {
+  return (number - inMin) * (outMax - outMin) / (inMax - inMin) + outMin;
+}
+
+
+
+
+
 
 
 

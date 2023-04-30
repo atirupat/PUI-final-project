@@ -298,25 +298,37 @@ header {
   flex-shrink: 0;
 }
 
-.position-animation {
-  flex-grow: 1;
+/* Progress Bar */
+.progress-tracker {
+  box-sizing: border-box;
 
-  /* background-color: #466db4; */
+  margin: auto 4%;
+  background-color: grey;
+
+  width: 100%;
+  /* min-width: 400px;
+  max-width: 800px; */
+  height: 50%;
+}
+
+.progress-bar {
+  width: 0%;
+  height: 100%;
+  background-color: #d9ff93;
 }
 
 .location-txt {
   box-sizing: border-box;
-  /* height: 100%; */
-  padding-top: 2%;
-  padding-bottom: 2%;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
   
   text-align: center;
   font-size: 100%;
   font-weight: normal;
   color: white;
-
-  padding-left: 1vw;
-  padding-right: 1vw;
 }
 
 /* ------------------------------ */
@@ -333,7 +345,6 @@ header {
   flex-direction: row;
 
   justify-content: space-between;
-  background-color: #9ea295;
 
   overflow-x: visible;
   overflow-y: hidden;
@@ -348,6 +359,7 @@ header {
 .display-content::-webkit-scrollbar {
   display: none; 
 }
+
 
 /* Styling for Section Title Divs */
 .begin-section {
@@ -398,7 +410,8 @@ header {
 
   justify-content: space-around;
   align-items: center;
-  background-color:rgb(232, 232, 255);
+
+  background-color: #ffffff;
 }
 
 iframe {
@@ -413,11 +426,6 @@ iframe {
 .info-content {
   width: auto;
   height: inherit;
-
-  padding-left: 2%;
-  padding-right: 2%;
-
-  margin: auto;
 
   display: flex;
 }
@@ -473,6 +481,7 @@ iframe {
 .img-and-caption {
   box-sizing: border-box;
   margin: auto;
+
   padding: 1%;
 
   display: flex;
@@ -482,6 +491,8 @@ iframe {
   height: 80%;
 
   text-align: center;
+
+  background-color: #ffffff;
   
 }
 
