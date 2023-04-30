@@ -1,6 +1,4 @@
 // Global Variables
-
-let locationTxtContents = 'Front Hills';
 let locationTxt = document.querySelector('#display-location');
 
 // Initial left position of '.times-by-division' div
@@ -52,7 +50,7 @@ $(window).on('scroll', function () {
   console.log('Back Hills: ' + mapBackHillsPosition);
 
   // Change Header Text Depending on which Section the User is Currently In
-  if (newPercentCompleted >= 0.00 && newPercentCompleted < mapFreeRollPosition) {
+  if (newPercentCompleted < mapFreeRollPosition) {
     locationTxt.innerHTML = 'Front Hills';
   } else if (newPercentCompleted >= mapFreeRollPosition && newPercentCompleted < mapSchenleyPosition) {
     locationTxt.innerHTML = 'Free Roll';
@@ -60,7 +58,7 @@ $(window).on('scroll', function () {
     locationTxt.innerHTML = 'Schenley Dr.';
   } else if (newPercentCompleted >= mapChutePosition && newPercentCompleted< mapBackHillsPosition) {
     locationTxt.innerHTML = '"The Chute"';
-  } else if (newPercentCompleted >= mapBackHillsPosition) {
+  } else if (newPercentCompleted >= mapBackHillsPosition && newPercentCompleted <= 100.00) {
     locationTxt.innerHTML = 'Back Hills';
   };
 
