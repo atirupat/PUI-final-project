@@ -130,6 +130,7 @@ a.nav-button, a.nav-button:visited {
   background-color: #6a8dc8;
 }
 
+
 /* -------------------------------------------------------------------------------------------------------------- */
 /* Interactive Course Map Display */
 #map-view {
@@ -196,9 +197,6 @@ a.nav-button, a.nav-button:visited {
   left: 33.75%; 
   bottom: 30%;
   z-index: 10;
-
-  /* width: 347px;
-  height: 235px; */
 
   width: 27%;
   height: 20%;
@@ -267,7 +265,7 @@ a.nav-button, a.nav-button:visited {
 }
 
 /* -------------------------------------------------------------------------------------------------------------- */
-/* Buggy Course */
+/* Main Page: Buggy Course */
 #buggy-course {
   background-color:skyblue;
 
@@ -316,8 +314,6 @@ header {
   background-color: grey;
 
   width: 100%;
-  /* min-width: 400px;
-  max-width: 800px; */
   height: 50%;
 }
 
@@ -438,6 +434,8 @@ iframe {
 }
 
 .info-content {
+  box-sizing: border-box;
+
   width: auto;
   height: inherit;
 
@@ -496,7 +494,7 @@ iframe {
   box-sizing: border-box;
   margin: auto;
 
-  padding: 1%;
+  padding: .5vh;
 
   display: flex;
   flex-direction: column;
@@ -535,7 +533,17 @@ iframe {
   height: 75%;
 }
 
-/* Featured Teams Specific Stylings */
+.featured-team {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: row;
+
+  width: auto;
+  height: auto;
+
+  margin: 0 4vh;
+}
+
 .team-logo {
   height: 60%;
 }
