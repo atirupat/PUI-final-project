@@ -1,7 +1,6 @@
 document.addEventListener("DOMContentLoaded", function() { 
 
     // Allow Users to navigate to buggy.html when pressing the "Enter" button
-
     $(document).keyup(function(event) {
       if (event.which === 13) {
           window.location.href = 'buggy.html';

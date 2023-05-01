@@ -27,26 +27,26 @@ $(window).on('scroll', function () {
   // Update Location Text
 
   // Get Position of Each Section within the Document
-  let newPercentCompleted = (scale(currentPosition.left, initialPosition.left, newDocumentWidth, 0, 100)).toFixed(2);
+  let newPercentCompleted = (scale(currentPosition.left, initialPosition.left, newDocumentWidth, 0, 100));
 
   // Free Roll
   const freeRollPosition = $('#free-roll').position();
-  const mapFreeRollPosition = (scale(freeRollPosition.left, initialPosition.left, newDocumentWidth, 0, 100)).toFixed(2);
+  const mapFreeRollPosition = (scale(freeRollPosition.left, initialPosition.left, newDocumentWidth, 0, 100));
   console.log('Free Roll: ' + mapFreeRollPosition);
 
   // Schenley
   const schenleyPosition = $('#schenley').position();
-  const mapSchenleyPosition = (scale(schenleyPosition.left, initialPosition.left, newDocumentWidth, 0, 100)).toFixed(2);
+  const mapSchenleyPosition = (scale(schenleyPosition.left, initialPosition.left, newDocumentWidth, 0, 100));
   console.log('Schenley: ' + mapSchenleyPosition);
 
   //The Chute
   const chutePosition = $('#chute').position();
-  const mapChutePosition = (scale(chutePosition.left, initialPosition.left, newDocumentWidth, 0, 100)).toFixed(2);
+  const mapChutePosition = (scale(chutePosition.left, initialPosition.left, newDocumentWidth, 0, 100));
   console.log('Chute: ' + mapChutePosition);
 
   // Back Hills
   const backHillsPosition = $('#back-hills').position();
-  const mapBackHillsPosition = (scale(backHillsPosition.left, initialPosition.left, newDocumentWidth, 0, 100)).toFixed(2);
+  const mapBackHillsPosition = (scale(backHillsPosition.left, initialPosition.left, newDocumentWidth, 0, 100));
   console.log('Back Hills: ' + mapBackHillsPosition);
 
   // Change Header Text Depending on which Section the User is Currently In
