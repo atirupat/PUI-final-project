@@ -39,7 +39,6 @@ p, span, h1, h2, h3, h4, button {
 /* -------------------------------------------------------------------------------------------------------------- */
 /* Nav Bar */
 .vertical-navigation-bar {
-  /* background-color: black; */
   box-sizing: border-box;
   background-color: white;
 
@@ -709,7 +708,6 @@ iframe {
 .buggy-road {
   box-sizing: border-box;
   position: fixed;
-  /* overflow-y: hidden; */
 
   /* fixing div to bottom left corner */
   bottom: 0;
@@ -729,8 +727,6 @@ iframe {
 
 #store-buggy-sprite {
   box-sizing: border-box;
-  /* height: min-cont; */
-  /* background-color: #466db4; */
 
   position: relative;
   height: 50%;
@@ -741,7 +737,6 @@ iframe {
   left: 0;
   bottom: 0;
 
-  /* width: 200px; */
   height: 100%;
 }
 
