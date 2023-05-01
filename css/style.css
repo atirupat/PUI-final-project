@@ -7,6 +7,11 @@ body {
   overflow-y: hidden;
 }
 
+/* Allow scrolling on Home Page Navigation Screen */
+#home-page {
+  overflow-y: scroll;
+}
+
 /* -------------------------------------------------------------------------------------------------------------- */
 /* Generic Text Styling */
 p, span, h1, h3, button {
@@ -44,16 +49,18 @@ p, span, h1, h3, button {
   align-items: center;
 
   width: auto;
-  max-width: 20%;
+  max-width: 390px;
+  min-width: 280px;
+
   height: 100vh;
 }
 
 #sweepstakes-logo {
   width: auto;
-  height: 33.3vh;
 
-  /* padding: 0px, 3%, 3%, 10px;
-  border-bottom: 3px solid black; */
+  height: auto;
+  max-height: 26vh;
+  min-height: 25vh;
 }
 
 #navigation-info {
