@@ -380,22 +380,26 @@ header {
 }
 
 .section-title {
-  background-color: antiquewhite;
   box-sizing: border-box;
-
-  width: fit-content;
+  background-color: black;
+  
+  width: 100%;
   height: fit-content;
 
   padding: 2%;
   
-
-  font-size: x-large;
+  font-size: xxx-large;
   font-weight: bold;
+
+  color: white;
+  text-decoration: underline solid white;
 }
 
 .section-subtitle {
   padding: 2%;
+
   font-weight: 600;
+  font-size: x-large;
 }
 
 /* Styling for Informational Divs */
@@ -556,8 +560,8 @@ iframe {
   font-size: x-large;
   font-weight: 600;
 
-  color: black;
-  background-color: ivory;
+  color: white;
+  background-color: black;
 
   border: none;
 
@@ -565,7 +569,7 @@ iframe {
 }
 
 .visit-team:hover {
-  background-color: lightgray;
+  background-color: rgb(71, 71, 71);
 }
 
 /* -------------------------- */
