@@ -109,8 +109,9 @@ p, span, h1, h3, button {
   color: white;
 }
 
-a.button {
+a.nav-button, a.nav-button:visited {
   text-decoration: none;
+  color: white;
 }
 
 #go-button {
@@ -119,6 +120,8 @@ a.button {
   margin-right: 2%;
 
   height: fit-content;
+
+  color: white;
 
   filter: drop-shadow(4px 6px 2px #454545);
 }
