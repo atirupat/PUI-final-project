@@ -5,6 +5,6 @@ Text, Images, Content, and Statistics are sourced primarily from the Buggy Alumn
 
 Deployed Website: https://atirupat.github.io/PUI-final-project/ 
 
-Link to Pre-Recorded Demo Video: [link] (https://drive.google.com/file/d/1SReEQekPg3BzRcsN6ZakWsUGpVbLXWTV/view?usp=share_link)
+Link to Pre-Recorded Demo Video: (https://drive.google.com/file/d/1SReEQekPg3BzRcsN6ZakWsUGpVbLXWTV/view?usp=share_link)
 
-Project Write-Up: [link](./Anishwar%20Tirupathur%20PUI%20Final%20Submission%20Write-Up.pdf)
+Project Write-Up: (./Anishwar%20Tirupathur%20PUI%20Final%20Submission%20Write-Up.pdf)
