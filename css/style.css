@@ -160,8 +160,8 @@ a.nav-button, a.nav-button:visited {
   position: absolute;
 
   box-sizing: border-box;
-  width: 40px;
-  height: 40px;
+  width: 50px;
+  height: 50px;
 
   border-radius: 50%;
 
@@ -173,6 +173,8 @@ a.nav-button, a.nav-button:visited {
   align-items: center;
 
   filter: drop-shadow(2px 3px 1px #454545);
+
+  z-index: 7;
 }
 
 .checkpoint-marker:hover {
@@ -184,6 +186,8 @@ a.nav-button, a.nav-button:visited {
 
   font-weight: bold;
   font-size: 25px;
+
+  z-index: 8;
 }
 
 .map-overlay {
